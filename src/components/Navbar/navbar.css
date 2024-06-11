@@ -1,0 +1,36 @@
+.navrbar{
+    position: fixed;
+    overflow: hidden;
+    top:0;
+  }
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4D869C;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar li a:hover {
+    background-color: #064369;
+  }
+
+  #cart{
+    float:right;
+    text-align: left;
+    width: 100px;
+  }

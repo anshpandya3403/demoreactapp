@@ -1,0 +1,33 @@
+body{
+  margin: 0px 0px;
+  padding:0px 0px;
+  background-color:#7AB2B2;
+}
+
+
+
+.main_container{
+  color:white;
+}
+
+.App-container{
+  display: fixed;
+}
+
+
+
+.grid-container {
+  display:grid;
+  width:50%;
+  margin:auto auto;
+  grid-template-columns: 150px 150px 150px 150px;
+  gap:10px 5px;
+  align-items: center;
+  justify-self: center;
+}
+
+
+
+
+
+
