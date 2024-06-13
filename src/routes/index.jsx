@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter,Routes,Route  } from "react-router-dom";
+import { HashRouter,Routes,Route  } from "react-router-dom";
 import Home from '../views/Home'
 import Contact from "../views/Contact";
 import Product from "../views/Product";
@@ -11,7 +11,7 @@ import  Pagination  from '../components/Pagination';
 const MainRouter = () =>{
 
     return(
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/contact' element={<Contact />}/>
@@ -21,7 +21,7 @@ const MainRouter = () =>{
           <Route path="*" element={<><NavBar/><h1>404</h1></>} />
           
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       );
 
 }

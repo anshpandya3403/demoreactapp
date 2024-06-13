@@ -1,6 +1,7 @@
 {
   "name": "calculator",
   "version": "0.1.0",
+  "homepage": "https://anshpandya3403.github.io/demoreactapp",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.3",
