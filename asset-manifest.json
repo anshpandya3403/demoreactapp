@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/demoreactapp/static/css/main.642c9e8b.css",
-    "main.js": "/demoreactapp/static/js/main.248c19fe.js",
+    "main.js": "/demoreactapp/static/js/main.1e874943.js",
     "static/js/488.2a101a78.chunk.js": "/demoreactapp/static/js/488.2a101a78.chunk.js",
     "index.html": "/demoreactapp/index.html",
     "main.642c9e8b.css.map": "/demoreactapp/static/css/main.642c9e8b.css.map",
-    "main.248c19fe.js.map": "/demoreactapp/static/js/main.248c19fe.js.map",
+    "main.1e874943.js.map": "/demoreactapp/static/js/main.1e874943.js.map",
     "488.2a101a78.chunk.js.map": "/demoreactapp/static/js/488.2a101a78.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.642c9e8b.css",
-    "static/js/main.248c19fe.js"
+    "static/js/main.1e874943.js"
   ]
 }
