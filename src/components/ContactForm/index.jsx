@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import './contactform.css';
+import axios from "axios";
 
 const ContactForm = () => {
   const [name,setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [review, setReview] = useState([]);
+
 
 
   const handleSubmit = (e) => {
@@ -16,6 +19,17 @@ const ContactForm = () => {
     setEmail("");
     setMessage("");
   };
+
+  const addMessage = () =>{
+      axios.post("http://localhost:5000/api/messages",{name,email,message})
+      .then((response) => {
+        setReview([...review,response.data]);
+        setName("");
+        setEmail("");
+        setMessage("");
+      }).catch((error) => {console.error("Error adding note",error);});
+  };
+
 
   return (
     <div className="contact-form">
@@ -53,9 +67,10 @@ const ContactForm = () => {
           />
         </div>
         <div>
-          <button type="submit">Submit</button>
+          
         </div>
       </form>
+      <button onClick={()=>addMessage()}>Submit</button>
     </div>
   );
 };

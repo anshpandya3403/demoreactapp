@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from "../../components/Navbar"
-import {useState} from 'react';
+
 import '../../App.css';
 
 const Home =()=>{

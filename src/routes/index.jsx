@@ -6,7 +6,7 @@ import Product from "../views/Product";
 import ProductPage from '../views/Productpage';
 import Cart from "../views/Cart";
 import NavBar from "../components/Navbar";
-import  Pagination  from '../components/Pagination';
+
 
 const MainRouter = () =>{
 
