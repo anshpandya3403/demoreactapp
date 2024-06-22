@@ -11,13 +11,14 @@ import {CartContext} from "../../components/Cart";
 const ProductPage = () => {
   const [product, setProduct] = useState("");
   const [review,setReview] = useState(false);
-  const { id } = useParams();
+  const { _id } = useParams();
   const {items,addToCart} = useContext(CartContext);
  
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`https://dummyjson.com/products/${id}`);
+        const response = await axios.get(`http://localhost:5000/api/products/${_id}`);
+        console.log(response.data);
         setProduct(response.data);
         console.log(response.data);
       } catch (error) {
@@ -26,7 +27,7 @@ const ProductPage = () => {
     };
 
     fetchProduct();
-  }, [id]);
+  }, [_id]);
 
 
   return (

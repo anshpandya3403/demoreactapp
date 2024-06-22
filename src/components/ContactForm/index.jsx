@@ -27,6 +27,7 @@ const ContactForm = () => {
         setName("");
         setEmail("");
         setMessage("");
+        console.log("your message has been senr");
       }).catch((error) => {console.error("Error adding note",error);});
   };
 

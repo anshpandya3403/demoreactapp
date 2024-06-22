@@ -22,7 +22,7 @@ const NavBar = () =>{
         </li>
        
         <li>
-            <NavLink to="/product">Products</NavLink>
+            <NavLink to="/products">Products</NavLink>
         </li>
         <li id="cart">
             <NavLink to="/cart">Cart{totalItems?(`(${totalItems})`):null}</NavLink>

@@ -7,6 +7,9 @@ export const CartLogic = ({children}) =>{
     
 
     const addToCart = (item) =>{
+        if(!item){
+          return;
+        }
         const inCart =  items.find((Cartitem)=>Cartitem.id===item.id);
         if(inCart){
             setItems(items.map((Cartitem)=>Cartitem.id===item.id?{ ...Cartitem, quantity: parseInt(Cartitem.quantity) + 1 }:Cartitem));

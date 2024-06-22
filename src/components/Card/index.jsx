@@ -4,7 +4,7 @@ import StarRating from '../StarRating';
 import {Link} from 'react-router-dom';
 
 
-const Card = ({product,addToCart}) => {
+const Card = ({product,addToCart,}) => {
   
   
   
@@ -82,7 +82,7 @@ const Card = ({product,addToCart}) => {
   return (
     
     <div style={cardStyle} className='card'>
-      <Link to={`/product/${product.id}`} key={product.id} style={{ textDecoration: 'none' }}>
+      <Link to={`/products/${product._id}`} key={product.id} style={{ textDecoration: 'none' }}>
       <div style={cardSubStyle}>
 
       <img src={product.thumbnail} alt={product.title} style={imageStyle} />
