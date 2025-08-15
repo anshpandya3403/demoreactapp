@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.urlencoded({extended: true}));
 
-const dbURI = 'mongodb+srv://anshpandya3403:hSpBwh08iGEuUDeL@messages.sfzxxpr.mongodb.net/?retryWrites=true&w=majority&appName=Messages';
+const dbURI = 'mongodb+srv://';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const connection = mongoose.connection;
