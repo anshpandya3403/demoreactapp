@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-const dbURI = 'mongodb+srv://anshpandya3403:hSpBwh08iGEuUDeL@messages.sfzxxpr.mongodb.net/?retryWrites=true&w=majority&appName=Messages';
+const dbURI = 'mongodb+srv://anshpandya3403:';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const connection = mongoose.connection;
